@@ -1,0 +1,8 @@
+<div class="success_message">
+  <%= flash[:notice] %>
+</div>
+<div class="contents">
+  <p class="text"><span class="bold">Title: </span><%= @book.title %></p>
+  <p class="text"><span class="bold">Body: </span><%= @book.body %></p>
+  <p class="text form_text"><%= link_to 'Edit', edit_book_path(@book.id) %> | <%= link_to 'Back', '/books' %></p>
+</div>
